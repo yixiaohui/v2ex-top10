@@ -29,7 +29,9 @@ class SendMail:
     def sendmsg(self,mail_to,subject,content):
         
         self.__login()
-        msg = MIMEText(content)
+        msg = MIMEText(content,'plain','utf-8')
+        msg["Accept-Language"]="zh-CN"
+        msg["Accept-Charset"]="ISO-8859-1,utf-8"
         msg['Subject'] = subject
         msg['From'] = self.__username
         msg['To'] = mail_to
