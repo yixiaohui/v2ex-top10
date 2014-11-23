@@ -13,7 +13,7 @@ import codecs
 url = "https://www.v2ex.com/api/topics/hot.json"
 user_name = "xxxxx@xxx.com"
 passwd = "xxxxxx"
-smtp_serv = "smtp@xxx.com"
+smtp_serv = "smtp.xxx.com"
 send_to = "xxxxxx@xx.com"
 
 class SendMail:
